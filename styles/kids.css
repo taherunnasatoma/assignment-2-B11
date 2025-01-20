@@ -27,6 +27,11 @@
   color: #FEA301;
 }
 
+.orange-color2
+{
+  color: #F0AA00;
+}
+
 .white-color
 {
   color:#FFFFFF;
@@ -45,6 +50,11 @@
 .blue-3
 {
   color: #5D58EF;
+}
+
+.blue-4
+{
+  color: #8700FF;
 }
 
 .bg-black
@@ -75,6 +85,12 @@
   font-weight: 700;
 }
 
+.common-title
+{
+  font-size: 2.88rem;
+  font-weight: 700;
+  color: #000000;
+}
 /* nav styles */
 
 .nav-item
@@ -154,7 +170,72 @@
   width: 100%;
 }
 
+/* Standard Curriculum styles */
 
+.standard
+{text-align: center;
+  margin-top: 60px;
+  background-image: url(../assets/bg.png);
+}
+.cards
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 80px;
+  margin-bottom: 80px;
+  gap: 28px;
+  padding: 20px 20px;
+  
+}
+.card-item
+{
+  
+    width: 365px;
+    height: 475px;
+    border-radius: 18px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.card-title
+{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #202020;
+}
+.card-description
+{
+  font-size: 0.94rem;
+  color: #808080;
+}
+.read-more
+{
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.grad1
+{
+  background: linear-gradient(to top, #FFFFFF 70%, rgba(222, 245, 255, 1) );
+  box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05); 
+ 
+}
+
+.grad2
+{
+  background: linear-gradient(to top, #FFFFFF 70%, #FFF4DC );
+  box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05); 
+ 
+}
+
+.grad3
+{
+  background: linear-gradient(to top, #FFFFFF 70%, #F2E8FF );
+  box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05); 
+ 
+}
 /* Responsive styles */
 @media screen and (max-width: 576px) {
 
@@ -195,6 +276,11 @@
     flex-direction: column-reverse;
     text-align: center;
 
+  }
+
+  .cards
+  {
+    flex-direction: column;
   }
 
   
